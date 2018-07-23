@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for foo in cates %}
+        <li><a href="/items?cate_id={{ foo.id }}" target="_blank">{{ foo.name }}</a></li>
+    {% endfor %}
+
+</body>
+</html>

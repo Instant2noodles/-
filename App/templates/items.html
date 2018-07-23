@@ -1,0 +1,17 @@
+{% for item in items %}
+<li>
+    {{ item.name }}>>>>{{ item.barcode }}
+    <div>
+        <img src="{{ item.icon }}" alt="">
+        <span>{{ item.name }}</span>
+        <span>{{ item.price }}</span>
+    </div>
+</li>
+    <style>
+    img{
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
+    }
+    </style>
+{% endfor %}
